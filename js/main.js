@@ -7,7 +7,7 @@ const mainContent = qs("#main__content");
 wax.addEventListener("click", async () => {
     clearView(mainContent);
 
-    const song = new Audio("../audios/test.mp3");
+    const song = new Audio("audios/test.mp3");
     await song.play();
 
     loadImage(mainContent);
@@ -16,7 +16,7 @@ wax.addEventListener("click", async () => {
 function loadImage(parent) {
     const img = document.createElement("img");
 
-    img.src = "../images/1.jpg";
+    img.src = "images/1.jpg";
     img.alt = "hero";
     img.classList.add("hero");
 
