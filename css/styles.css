@@ -7,38 +7,74 @@
     --libre-bodoni: "Libre Bodoni", serif;
     --great-vibes: "Great Vibes", serif;
     --playwrite-ro: "Playwrite RO", serif;
-}
+    --roboto: "Roboto", serif;
 
-aside {
-    display: flex;
-    justify-content: center;
-}
-.heading {
-    font-family: var(--great-vibes);
-    font-size: 3rem;
-    font-weight: normal;
-    padding-top: 1.5rem;
-    position: absolute;
-}
-.names-heading,
-.subheading {
-    font-family: var(--great-vibes);
-    font-size: 3rem;
-    font-weight: normal;
+    --green: #344E41;
 }
 
 main {
     max-width: 100vw;
-    text-align: center;
 }
 
-img {
+/* fonts */
+.heading {
+    font-family: var(--great-vibes);
+    font-size: 4rem;
+    padding-top: 30vh;
+    padding-bottom: .5rem;
+}
+.quote {
+    font-family: var(--libre-bodoni);
+    font-size: .9rem;
+}
+#names {
+    padding-top: 25vh;
+    font-family: var(--roboto);
+    font-weight: 300;
+    font-size: 3rem;
+    font-style: italic;
+}
+#names .lname {
+    font-family: var(--libre-bodoni);
+    font-size: 1.5rem;
+}
+#names .and {
+    font-family: var(--great-vibes);
+    font-size: 1.5rem;
+}
+/* end fonts */
+
+#v1,
+#v2 {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+#v1 aside {
+    position: absolute;
+    height: 100%;
     width: 100%;
+    text-align: center;
+    background: rgba(0, 0, 0, .19);
+    color: white;
+    z-index: 1;
 }
-
-iframe {
-    width: 90vw;
-    height: 50vh;
-    border: none;
-    border-radius: 1rem;
+#v1 img,
+#v2 img {
+    position: relative;
+    height: 100%;
+    width: auto;
+}
+#v2 aside {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+    color: black;
+    background: rgba(245, 245, 220, .45);
+}
+#v2 .quote {
+    padding: 5rem 2rem;
+    font-size: 1rem;
 }
