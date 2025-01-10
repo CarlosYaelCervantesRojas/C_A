@@ -20,7 +20,6 @@ main {
 .heading {
     font-family: var(--great-vibes);
     font-size: 4rem;
-    padding-top: 30vh;
     padding-bottom: .5rem;
 }
 .quote {
@@ -50,6 +49,9 @@ main {
     width: 100vw;
     overflow: hidden;
 }
+#v3 {
+    width: 100vw;
+}
 #v1 aside {
     position: absolute;
     height: 100%;
@@ -59,11 +61,18 @@ main {
     color: white;
     z-index: 1;
 }
+#v1 aside div {
+    padding-top: 30vh;
+}
 #v1 img,
 #v2 img {
     position: relative;
     height: 100%;
     width: auto;
+}
+#v3 img {
+    height: auto;
+    width: 100%;
 }
 #v2 aside {
     position: absolute;
@@ -72,7 +81,6 @@ main {
     text-align: center;
     z-index: 1;
     color: black;
-    background: rgba(245, 245, 220, .45);
 }
 #v2 .quote {
     padding: 5rem 2rem;
