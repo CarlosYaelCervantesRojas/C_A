@@ -1,3 +1,7 @@
-const audio = new Audio("../audios/test.mp3");
+const audio = new Audio("/audios/test.mp3");
 
-audio.play();
+
+window.addEventListener("scroll", () => {
+    audio.play();
+
+})
