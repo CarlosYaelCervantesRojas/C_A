@@ -16,6 +16,10 @@ main {
     max-width: 100vw;
     overflow: hidden;
 }
+section {
+    display: flex;
+    justify-content: center;
+}
 
 /* fonts */
 .heading {
@@ -68,7 +72,7 @@ main {
 #v2 img {
     position: relative;
     height: 100%;
-    width: 100%;
+    width: auto;
 }
 #v3 img {
     height: auto;
