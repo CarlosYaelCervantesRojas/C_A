@@ -73,7 +73,7 @@ body {
 }
 
 #v2 {
-    background-image: url("/images/papel.webp");
+    background-image: url("../images/papel.webp");
     background-size: cover;
     background-repeat: no-repeat;
 }
