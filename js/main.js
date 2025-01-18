@@ -1,7 +1,21 @@
-const audio = new Audio("/audios/test.mp3");
+const wedding = new Date("2025-04-10T17:00");
 
-
-// window.addEventListener("scroll", () => {
-//     audio.play();
-
-// })
+const countdownFunction = setInterval(function() {
+    const now = new Date().getTime();
+    
+    const timeUntil = (wedding - now);
+    
+    const days = Math.floor(timeUntil / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((timeUntil % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((timeUntil % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((timeUntil % (1000 * 60)) / 1000);
+    
+    document.getElementById("v3").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+    
+    
+    // if (distance < 0) {
+    //     clearInterval(countdownFunction);
+    //     document.getElementById("countdown").innerHTML = "¡Tiempo terminado!";
+    // }
+}, 1000);
