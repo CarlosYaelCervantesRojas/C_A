@@ -25,7 +25,7 @@ const sobre = document.getElementById("inv");
 const main = document.getElementById("main");
 const sello = document.getElementById("sello");
 
-const audio = new Audio("../audios/song.mp3");
+const audio = new Audio("audios/song.wav");
 
 sello.addEventListener("click", () => {
     sobre.classList.add("hidden");
@@ -33,5 +33,4 @@ sello.addEventListener("click", () => {
     main.classList.remove("hidden");
 
     audio.play();
-    
 });
