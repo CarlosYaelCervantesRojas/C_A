@@ -19,3 +19,19 @@ const countdownFunction = setInterval(function() {
     //     document.getElementById("countdown").innerHTML = "¡Tiempo terminado!";
     // }
 }, 1000);
+
+
+const sobre = document.getElementById("inv");
+const main = document.getElementById("main");
+const sello = document.getElementById("sello");
+
+const audio = new Audio("../audios/song.mp3");
+
+sello.addEventListener("click", () => {
+    sobre.classList.add("hidden");
+    sobre.removeAttribute("id")
+    main.classList.remove("hidden");
+
+    audio.play();
+    
+});
