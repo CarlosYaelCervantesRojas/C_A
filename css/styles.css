@@ -38,7 +38,7 @@ body {
     justify-content: center;
 }
 main {
-    max-width: 385px;
+    /* max-width: 385px; */
     overflow: hidden;
 }
 
