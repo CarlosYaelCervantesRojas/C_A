@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 :root {
@@ -70,9 +71,15 @@ body {
 }
 
 #v1,
-#v2 {
+#v2,
+#v3,
+#v4 {
     height: 100vh;
     overflow: hidden;
+}
+#v1 .quote
+#v3 .quote {
+    padding: 0 2rem;
 }
 #v1 aside {
     position: absolute;
@@ -86,13 +93,15 @@ body {
     padding-top: 10em;
     text-align: center;
 }
-#v1 .img__container {
+#v1 .img__container,
+#v3 .img__container {
     height: 100vh;
     width: auto;
     display: flex;
     justify-content: center;
 }
-#v1 .img__container img {
+#v1 .img__container img,
+#v3 .img__container img {
     height: 100%;
     width: auto;
 }
@@ -108,4 +117,37 @@ body {
 #v2 aside .quote {
     padding: 3rem 2rem 2rem;
     text-align: center;
+}
+
+#v3 aside {
+    position: absolute;
+    z-index: 1;
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+#v3 aside .content__container {
+    padding: 4rem 2rem 2rem;
+}
+#v3 .img__container {
+    position: relative;
+}
+
+#v4 {
+    background-color: #efebe7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#v4 .img__container {
+    max-width: 450px;
+
+}
+#v4 .img__container img {
+    height: auto;
+    width: 100%;
 }
