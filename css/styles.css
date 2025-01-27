@@ -187,6 +187,13 @@
     body {
         overflow-x: hidden;
     }
+    #inv picture img {
+        padding: 5rem;
+    }
+    #inv .img__container img {
+        width: 90px;
+        padding-top: .7rem;
+    }
     #v1 .img__container,
     #v5 .img__container {
         display: flex;
@@ -199,7 +206,6 @@
     }
     #v2 .img__container img,
     #v4 .img__container img,
-    #v6 .img__container img,
     #v7 .img__container img {
         height: 100vh;
         width: auto;
@@ -208,7 +214,8 @@
     #v6 {
         height: fit-content;
     }
-    #v3 .img__container:first-child img {
+    #v3 .img__container:first-child img,
+    #v6 .img__container img {
         height: auto;
         width: 50%;
         border-radius: 25px;
