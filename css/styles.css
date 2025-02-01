@@ -56,6 +56,7 @@
 #inv .img__container img {
     width: 60px;
     cursor: pointer;
+    animation: grow-shrink 3s infinite;
 }
 
 #v1 {
@@ -182,6 +183,45 @@
     padding-bottom: 1rem;
 }
 
+#v8 {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    background-color: #d1cdca;
+}
+#v8 .content__container {
+    position: absolute;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4.5rem;
+}
+#v8 .mesa__container {
+    animation: grow-shrink 3s infinite;
+}
+#v8 .img__container {
+    height: 100vh;
+    width: 100vw;
+}
+#v8 .img__container img {
+    height: 100%;
+    width: auto;
+}
+
+
+@keyframes grow-shrink {
+    0%, 100% {
+        transform: scale(.8);
+    }
+    50% {
+        transform: scale(1);
+    }
+}
 
 @media screen and (min-width: 450px) {
     body {
@@ -195,7 +235,8 @@
         padding-top: .7rem;
     }
     #v1 .img__container,
-    #v5 .img__container {
+    #v5 .img__container,
+    #v8 .img__container {
         display: flex;
         justify-content: center;
     }
