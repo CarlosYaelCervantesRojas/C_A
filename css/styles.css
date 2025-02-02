@@ -214,10 +214,12 @@
 }
 
 .block {
+    -webkit-animation: autoShow both;
     animation: autoShow both;
     animation-timeline: view(100% 20%);
 }
 .autoBlur {
+    -webkit-animation: autoBlur linear both;
     animation: autoBlur linear both;
     animation-timeline: view();
 }
