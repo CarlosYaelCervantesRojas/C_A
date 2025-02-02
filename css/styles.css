@@ -203,8 +203,7 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    gap: 3rem;
+    justify-content: space-evenly;
 }
 #v8 .mesa__container {
     display: flex;
@@ -215,6 +214,7 @@
 }
 #v8 .mesa__container {
     text-decoration: none;
+    color: black;
 }
 #v8 .mesa__container button {
     width: 7rem;
