@@ -34,3 +34,33 @@ sello.addEventListener("click", () => {
 
     audio.play();
 });
+
+function getParam() {
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    const numInv = urlParams.get("pase");
+    
+    if (numInv) {
+        return Number(numInv);
+    }
+}
+
+function setPass() {
+    const pass = getParam();
+
+    if (pass) {
+        localStorage.setItem("pase", pass);
+        showPass();
+    }
+}
+
+function showPass() {
+    const pase = localStorage.getItem("pase");
+
+    if (pase) {
+        const pass = document.getElementById("pass");
+        pass.innerText = `Pase para: ${pase}`;
+    }
+}
+
+setPass();
