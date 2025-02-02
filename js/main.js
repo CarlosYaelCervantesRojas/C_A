@@ -39,20 +39,13 @@ function getParam() {
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
     const numInv = urlParams.get("pase");
+
+    const pase = localStorage.getItem("pase");
     
-    if (numInv) {
-        return Number(numInv);
+    if (numInv && !pase) {
+        localStorage.setItem("pase", numInv);
     }
-}
-
-function setPass() {
-    const pass = getParam();
-
-    if (pass) {
-        localStorage.setItem("pase", pass);
-        showPass();
-    }
-}
+} getParam();
 
 function showPass() {
     const pase = localStorage.getItem("pase");
@@ -61,6 +54,4 @@ function showPass() {
         const pass = document.getElementById("pass");
         pass.innerText = `Pase para: ${pase}`;
     }
-}
-
-setPass();
+} showPass();
