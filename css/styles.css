@@ -19,6 +19,10 @@
     font-size: 4rem;
     padding-bottom: .5rem;
 }
+.heading2 {
+    font-family: var(--great-vibes);
+    font-size: 3rem;
+}
 .quote {
     font-family: var(--libre-bodoni);
 }
@@ -40,6 +44,15 @@
     font-weight: bold;
     font-size: 2.3rem;
     text-align: center;
+}
+.message {
+    font-family: var(--libre-bodoni);
+    font-size: 1.1rem;
+}
+.adver {
+    font-family: var(--cinzel);
+    font-weight: bold;
+    font-size: 1.2rem;
 }
 /* end fonts */
 
@@ -203,7 +216,8 @@
     text-align: center;
     background-color: #d1cdca;
 }
-#v8 .content__container {
+#v8 .content__container,
+#v10 .content__container {
     position: absolute;
     z-index: 1;
     width: 100vw;
@@ -212,14 +226,16 @@
     flex-direction: column;
     justify-content: space-evenly;
 }
-#v8 .mesa__container {
+#v8 .mesa__container,
+#v10 .mesa__container {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
     animation: grow-shrink 3s infinite;
 }
-#v8 .mesa__container {
+#v8 .mesa__container,
+#v10 .mesa__container {
     text-decoration: none;
     color: black;
 }
@@ -245,17 +261,30 @@
     width: auto;
 }
 
-#v9 {
+#v9,
+#v10 {
     position: relative;
     justify-content: center;
     background-color: #c2cab5;
+    text-align: center;
 }
 #counter {
     position: absolute;
     bottom: 5rem;
 }
-#v9 .img__container img {
+#v9 .img__container img,
+#v10 .img__container img {
     height: 100vh;
+}
+
+#v10 button {
+    padding: 10px;
+    background: transparent;
+    border-radius: 2rem;
+    font-family: var(--libre-bodoni);
+    font-weight: bold;
+    font-size: 1.2rem;
+    border: black 3px solid;
 }
 
 .block {
