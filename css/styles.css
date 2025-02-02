@@ -57,7 +57,7 @@
 /* end fonts */
 
 .hidden {
-    /* display: none; */
+    display: none;
 }
 
 #inv {
