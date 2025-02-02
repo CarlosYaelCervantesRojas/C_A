@@ -218,11 +218,7 @@
     animation: autoShow both;
     animation-timeline: view(100% 20%);
 }
-.autoBlur {
-    -webkit-animation: autoBlur linear both;
-    animation: autoBlur linear both;
-    animation-timeline: view();
-}
+
 
 
 @keyframes grow-shrink {
@@ -258,29 +254,6 @@
     } to {
         opacity: 1;
         transform: translateY(0) scale(1);
-    }
-}
-
-@-webkit-keyframes autoBlur {
-    0%{
-        filter: blur(40px);
-    }
-    30%, 75% {
-        filter: blur(0px);
-    }
-    100% {
-        filter: blur(40px);
-    }
-}
-@keyframes autoBlur {
-    0%{
-        filter: blur(40px);
-    }
-    30%, 75% {
-        filter: blur(0px);
-    }
-    100% {
-        filter: blur(40px);
     }
 }
 
