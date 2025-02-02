@@ -30,6 +30,11 @@
     font-weight: 200;
     font-size: 2rem;
 }
+.gretting {
+    font-family: var(--libre-bodoni);
+    font-size: 1.3rem;
+    padding: 0 2rem;
+}
 /* end fonts */
 
 .hidden {
@@ -199,10 +204,30 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 4.5rem;
+    gap: 3rem;
 }
 #v8 .mesa__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
     animation: grow-shrink 3s infinite;
+}
+#v8 .mesa__container {
+    text-decoration: none;
+}
+#v8 .mesa__container button {
+    width: 7rem;
+    height: 3rem;
+    background: transparent;
+    border-radius: 2rem;
+    font-family: var(--libre-bodoni);
+    font-weight: bold;
+    font-size: 1.2rem;
+    border: black 3px solid;
+}
+#v8 .mesa__container img {
+    width: 130px;
 }
 #v8 .img__container {
     height: 100vh;
