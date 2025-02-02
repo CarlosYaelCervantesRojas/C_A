@@ -35,6 +35,12 @@
     font-size: 1.3rem;
     padding: 0 2rem;
 }
+#counter {
+    font-family: var(--great-vibes);
+    font-weight: bold;
+    font-size: 2.3rem;
+    text-align: center;
+}
 /* end fonts */
 
 .hidden {
@@ -155,7 +161,8 @@
 }
 
 #v4,
-#v7 {
+#v7,
+#v9 {
     display: flex;
     align-items: center;
     height: 100vh;
@@ -238,6 +245,19 @@
     width: auto;
 }
 
+#v9 {
+    position: relative;
+    justify-content: center;
+    background-color: #c2cab5;
+}
+#counter {
+    position: absolute;
+    bottom: 5rem;
+}
+#v9 .img__container img {
+    height: 100vh;
+}
+
 .block {
     -webkit-animation: autoShow both;
     animation: autoShow both;
@@ -307,7 +327,8 @@
     }
     #v2 .img__container img,
     #v4 .img__container img,
-    #v7 .img__container img {
+    #v7 .img__container img,
+    #v9 .img__container img {
         height: 100vh;
         width: auto;
     }  
@@ -327,7 +348,8 @@
         height: 100vh;
         padding: 5rem;
     }
-    #v7 {
+    #v7,
+    #v9 {
         justify-content: center;
     }
 }
